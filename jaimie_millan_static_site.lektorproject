@@ -1,0 +1,5 @@
+[project]
+name = jaimie_millan_static_site
+
+[servers.ghpages]
+target = ghpages://jaimie-jhm/your-repository

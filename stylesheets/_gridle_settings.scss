@@ -1,0 +1,20 @@
+@import "gridle/gridle";
+
+$mobile-width: 900px;
+$tablet-width: 1200px;
+
+@include gridle_setup( (
+        context : 12,
+        gutter-width : 0px,
+) );
+
+@include gridle_register_state ( mobile , (
+        max-width : $mobile-width
+) );
+
+@include gridle_register_state ( landscape , (
+        max-width : $tablet-width
+) );
+
+// generate classes :
+@include gridle_generate_classes ( );

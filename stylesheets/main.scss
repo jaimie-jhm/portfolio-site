@@ -1,0 +1,119 @@
+@import "bourbon/bourbon";
+@import "gridle_settings";
+
+@import "utils";
+
+
+@import "header";
+@import "footer";
+@import "step_nav";
+
+$body-color: #1b528a;
+$link-color: #292621;
+
+html,body { height:100%; }
+
+body {
+  font-family: 'Heebo', 'Verdana', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  background: #f9f9ff;
+  color: $body-color;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+h2 {
+  font-weight: 400;
+}
+
+a {
+  color: $link-color;
+}
+
+a:hover {
+  color: #33bbdf;
+}
+
+p {
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.lite {
+  font-weight: 100;
+}
+
+div.page {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.body {
+  font-size: modular-scale(1);
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.intro p {
+  font-size: 1.5em;
+}
+
+.pinboard {
+  background-color: #d2e7ef;
+}
+
+.pinboard .inst {
+  padding: 0 1em;
+}
+
+.profile img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-strip {
+  background-color: #c9ddef;
+  margin-bottom: 4em;
+}
+
+.contact-strip a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-bottom: 1px solid $header-color;
+}
+
+.contact-strip a:hover {
+  background-color: rgba(124, 124, 124, 0.4);
+  color: white;
+}
+
+// above mobile
+@media screen and (min-width: $mobile-width) {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .body {
+    padding: 0 2rem;
+  }
+  .profile img {
+    margin-top: 4rem;
+  }
+  .contact-strip {
+      border-top: 1px solid $header-color;
+  }
+  .contact-strip a {
+    border-bottom: none;
+  }
+}

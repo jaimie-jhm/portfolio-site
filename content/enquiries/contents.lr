@@ -1,0 +1,7 @@
+title: Enquiries
+---
+body: <form action="https://www.elformo.com/forms/ae7dd32d-0108-4a71-a6eb-e96cc1c421ca" method="post" accept-charset="UTF-8">
+    <label>email:</label><input id="email" name="email" type="email" />
+    <label>message:</label><textarea id="comment" name="comment"></textarea>
+    <input id="submit" name="submit" type="Submit" />
+  </form>

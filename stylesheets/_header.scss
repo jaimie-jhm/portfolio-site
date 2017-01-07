@@ -1,0 +1,45 @@
+$step-nav-row-height: 2em;
+$header-color: rgb(50,69,84);
+
+header nav.step-nav {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+header nav.step-nav li {
+  background-color: $header-color;
+  transition: .3s background-color;
+}
+
+header nav.step-nav a {
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  transition: .3s color;
+}
+
+header nav.step-nav li:hover a {
+  color: $header-color;
+}
+
+header nav.step-nav li:hover {
+  background-color: white;
+}
+
+
+header nav.step-nav li.active {
+  background-color: white;
+}
+
+header nav.step-nav li.active a {
+  color: $header-color;
+  font-weight: 100;
+}
+
+@media screen and (min-width: $mobile-width) {
+  header nav.step-nav li {
+    display: inline-block;
+    width: 20%;
+    margin-right: -7px;
+  }
+}

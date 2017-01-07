@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block class %}{{ this.class }}{% endblock %}
+{% block body %}
+    <div class="container intro">
+        <div class="gr-6 gr-12@mobile profile">
+            <img src="{{ '/images/profile_colour_crop.png'|url }}" alt="">
+        </div>
+        <div class="gr-6 gr-12@mobile">
+            <h1>Jaimie<br>Hamilton<br>Millan</h1>
+            {{ this.intro_body }}
+        </div>
+    </div>
+    <div class="container contact-strip">
+        <div class="gr-3 gr-12@mobile">
+            <a href="/contact">EMAIL</a>
+        </div>
+        <div class="gr-3 gr-12@mobile">
+            <a href="">TWITTER <span class="lite">(coming soon)</span></a>
+        </div>
+        <div class="gr-3 gr-12@mobile">
+            <a href="">FACEBOOK <span class="lite">(coming soon)</span></a>
+        </div>
+        <div class="gr-3 gr-12@mobile">
+            <a href="">Instagram <span class="lite">(coming soon)</span></a>
+        </div>
+    </div>
+{% endblock %}

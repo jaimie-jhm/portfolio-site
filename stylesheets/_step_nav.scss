@@ -1,0 +1,27 @@
+$step-nav-row-height: 2em;
+
+nav.step-nav img {
+  width: auto;
+  height: $step-nav-row-height - 0.75;
+  vertical-align: sub;
+}
+
+nav.step-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.step-nav ul li {
+  text-align: center;
+  line-height: $step-nav-row-height;
+  height: $step-nav-row-height;
+}
+
+nav.step-nav ul .active {
+  font-weight: 600;
+}
+
+nav.step-nav ul li a {
+  text-decoration: none;
+}
