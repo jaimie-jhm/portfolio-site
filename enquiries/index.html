@@ -20,17 +20,11 @@
         .site_footer {
             flex-shrink: 0;
         }
-        label {
-            font-weight: 600;
-        }
         input, textarea {
             font-size: 1.25em;
         }
         #comment {
             height: 10em;
-        }
-        #submit {
-            font-size: 1.25em;
         }
         .InputAddOn {
             display: flex;
@@ -112,7 +106,9 @@ padding: 0.5em
                 <label class="InputAddOn-item">message:</label>
                 <textarea id="comment" class="InputAddOn-field" name="comment"></textarea>
             </div>
-            <button id="submit" form="cfrm">Send Message</button>
+            <div class="rj">
+                <button id="submit" form="cfrm">Send Message</button>
+            </div>
         </form>
     </div>
 </div>
